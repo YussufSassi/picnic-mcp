@@ -24,6 +24,7 @@ Set the following environment variables:
 ```bash
 export PICNIC_EMAIL="your-email@example.com"
 export PICNIC_PASSWORD="your-password"
+export PICNIC_COUNTRY_CODE="DE"
 ```
 
 ## Usage
@@ -37,7 +38,8 @@ The server can be used with any MCP-compatible client. Add it to your MCP client
     "args": ["/path/to/mcp/build/index.js"],
     "env": {
       "PICNIC_EMAIL": "your-email@example.com",
-      "PICNIC_PASSWORD": "your-password"
+      "PICNIC_PASSWORD": "your-password",
+      "PICNIC_COUNTRY_CODE": "DE"
     }
   }
 }

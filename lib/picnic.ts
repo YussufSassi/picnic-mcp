@@ -5,7 +5,7 @@ export async function getPicnicClient() {
     const password = process.env.PICNIC_PASSWORD as string
 
     const picnicClient = new PicnicClient({
-        countryCode: "DE"
+        countryCode: process.env.PICNIC_COUNTRY_CODE as "DE" | "NL" || "DE"
     });
 
     await picnicClient.login(email, password);
